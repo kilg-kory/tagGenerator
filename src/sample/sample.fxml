@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="pane_root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="287.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.152" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <TextField fx:id="tf_source" layoutX="14.0" layoutY="23.0" onInputMethodTextChanged="#handleOnSourceTextChanged" prefHeight="26.0" prefWidth="411.0" />
+        <TextArea id="ta_destination" fx:id="ta_dest_text" layoutX="14.0" layoutY="76.0" prefHeight="192.0" prefWidth="411.0" wrapText="true" />
+        <Button fx:id="btn_copy_to_clipboard" layoutX="449.0" layoutY="242.0" mnemonicParsing="false" onAction="#handlerCopyToClipboard" text="Copy to Clipboard" />
+        <CheckBox fx:id="chbx_ru" layoutX="464.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleChbx" selected="true" text="Russian" />
+        <CheckBox fx:id="chbx_digets" layoutX="464.0" layoutY="46.0" mnemonicParsing="false" onAction="#handleChbx" selected="true" text="Only Digets" />
+        <CheckBox fx:id="chbx_last_part_hyphen" layoutX="464.0" layoutY="76.0" mnemonicParsing="false" onAction="#handleChbx" selected="true" text="Last Part By -" />
+        <CheckBox fx:id="chbx_last_part_sp" layoutX="464.0" layoutY="109.0" mnemonicParsing="false" onAction="#handleChbx" selected="true" text="Last Part By Sp" />
+        <CheckBox fx:id="chbx_dirty_letters" layoutX="464.0" layoutY="138.0" mnemonicParsing="false" onAction="#handleChbx" selected="true" text="Dirty Letters" />
+        <Label layoutX="549.0" layoutY="231.0" text="Ctrl+R">
+            <font>
+                <Font size="9.0" />
+            </font>
+        </Label>
+    </children>
+</Pane>
